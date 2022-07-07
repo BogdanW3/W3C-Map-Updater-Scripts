@@ -11,12 +11,14 @@ import { initMatchEndTimers } from "tournamentMatch";
 import { getGameMode, MapGameMode } from "utils";
 import { anonymizePlayerNames } from "player_features/anonymizeNames";
 import { enableForfeit } from "player_features/forfeit";
+import { enableGrid } from "player_features/grid";
 
 function init() {
   enableShowCommandsTrigger();
   enableCameraZoom();
   enableWorkerCount();
   enableUnitDenyTrigger();
+  enableGrid();
 
   // Observer-Only Features
   enableItemSoldBoughtTrigger();
